@@ -1,6 +1,6 @@
-package dao;
+package com.timeline.dao;
 
-import model.Candidate;
+import com.timeline.model.Candidate;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;

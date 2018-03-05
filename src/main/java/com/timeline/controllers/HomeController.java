@@ -1,7 +1,7 @@
-package controllers;
+package com.timeline.controllers;
 
-import dao.CandidateRepository;
-import model.Candidate;
+import com.timeline.dao.CandidateRepository;
+import com.timeline.model.Candidate;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 

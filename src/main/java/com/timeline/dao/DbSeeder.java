@@ -1,8 +1,8 @@
-package dao;
+package com.timeline.dao;
 
-import model.CandidateDetails;
-import model.Candidate;
-import model.Event;
+import com.timeline.model.CandidateDetails;
+import com.timeline.model.Candidate;
+import com.timeline.model.Event;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -12,9 +12,9 @@ import java.util.List;
 
 @Component
 public class DbSeeder implements CommandLineRunner {
-    private dao.CandidateRepository candidateRepository;
+    private com.timeline.dao.CandidateRepository candidateRepository;
 
-    public DbSeeder(dao.CandidateRepository candidateRepository) {
+    public DbSeeder(com.timeline.dao.CandidateRepository candidateRepository) {
         this.candidateRepository = candidateRepository;
     }
 

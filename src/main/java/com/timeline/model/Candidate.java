@@ -1,4 +1,4 @@
-package model;
+package com.timeline.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.IndexDirection;
@@ -18,7 +18,7 @@ public class Candidate {
     private List<Event> events;
 
 
-    private Candidate(Builder builder) {
+    public Candidate(Builder builder) {
         name = builder.name;
         surname=builder.surname;
         candidateDetails=builder.candidateDetails;

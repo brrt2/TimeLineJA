@@ -1,4 +1,4 @@
-package model;
+package com.timeline.model;
 
 public class CandidateDetails {
 
