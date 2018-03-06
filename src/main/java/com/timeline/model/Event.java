@@ -1,6 +1,7 @@
 package com.timeline.model;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 public class Event {
 
@@ -10,7 +11,13 @@ public class Event {
 
     public Event() { }
 
-    public Event(String description) {
+  public Event(EventType eventType, LocalDate date, String description) {
+    this.eventType = eventType;
+    this.date = date;
+    this.description = description;
+  }
+
+  public Event(String description) {
         this.description = description;
     }
 

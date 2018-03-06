@@ -2,6 +2,7 @@ package com.timeline.controllers;
 
 import com.timeline.dao.CandidateRepository;
 import com.timeline.model.Candidate;
+import com.timeline.model.Event;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
@@ -31,10 +32,10 @@ public class HomeController {
         this.candidateRepository.save(candidate);
     }
 
+
     @GetMapping("/{id}")
     public Candidate getById(@PathVariable("id") String id){
         Candidate candidate = this.candidateRepository.findById(id);
-
         return candidate;
     }
 

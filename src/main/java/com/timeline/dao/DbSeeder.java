@@ -3,11 +3,14 @@ package com.timeline.dao;
 import com.timeline.model.CandidateDetails;
 import com.timeline.model.Candidate;
 import com.timeline.model.Event;
+import com.timeline.model.EventType;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 @Component
@@ -21,7 +24,7 @@ public class DbSeeder implements CommandLineRunner {
     @Override
     public void run(String... strings) throws Exception {
         List<Event> firstEvent = new ArrayList<>();
-        firstEvent.add(new Event("CV received"));
+        firstEvent.add(new Event(EventType.RECRUITMENT,LocalDate.now(),"CV received"));
 
         Candidate sampleCandidate1 = new Candidate.Builder()
                 .withName("Jan")
